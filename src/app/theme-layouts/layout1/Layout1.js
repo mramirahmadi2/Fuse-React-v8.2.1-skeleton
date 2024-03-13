@@ -40,7 +40,7 @@ function Layout1(props) {
       {/* {config.leftSidePanel.display && <LeftSideLayout1 />} */}
 
       <div className="flex flex-auto min-w-0">
-        {/* {config.navbar.display && config.navbar.position === 'left' && <NavbarWrapperLayout1 />} */}
+        {config.navbar.display && config.navbar.position === 'left' && <NavbarWrapperLayout1 />}
 
         <main id="fuse-main" className="flex flex-col flex-auto min-h-full min-w-0 relative z-10">
           {config.toolbar.display && (
@@ -61,10 +61,10 @@ function Layout1(props) {
 
         </main>
 
-        {/* {config.navbar.display && config.navbar.position === 'right' && <NavbarWrapperLayout1 />} */}
+        {config.navbar.display && config.navbar.position === 'right' && <NavbarWrapperLayout1 />}
       </div>
 
-      {config.rightSidePanel.display && <RightSideLayout1 />}
+      {/* {config.rightSidePanel.display && <RightSideLayout1 />} */}
       <FuseMessage />
     </Root>
   );

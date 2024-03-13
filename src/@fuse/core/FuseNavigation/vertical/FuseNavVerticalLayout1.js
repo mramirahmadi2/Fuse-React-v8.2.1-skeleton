@@ -2,7 +2,7 @@ import List from '@mui/material/List';
 import { styled } from '@mui/material/styles';
 import clsx from 'clsx';
 import { useDispatch } from 'react-redux';
-import FuseNavItem from '../FuseNavItem';
+
 
 const StyledList = styled(List)(({ theme }) => ({
   '& .fuse-list-item': {
@@ -53,15 +53,7 @@ function FuseNavVerticalLayout1(props) {
         className
       )}
     >
-      {navigation.map((_item) => (
-        <FuseNavItem
-          key={_item.id}
-          type={`vertical-${_item.type}`}
-          item={_item}
-          nestedLevel={0}
-          onItemClick={handleItemClick}
-        />
-      ))}
+
     </StyledList>
   );
 }

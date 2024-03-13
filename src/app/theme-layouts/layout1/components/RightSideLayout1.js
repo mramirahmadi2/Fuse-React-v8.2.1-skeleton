@@ -68,7 +68,7 @@ function RightSideLayout1(props) {
           },
         }}
         variant="permanent"
-        anchor="right"
+        // anchor="right"
         
       >
         <Toolbar />

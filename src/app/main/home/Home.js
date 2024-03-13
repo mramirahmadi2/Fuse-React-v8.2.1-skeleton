@@ -1,20 +1,29 @@
-import React from 'react'
-import FormOne from './components/SystemData/FormOne'
-import MyTable from './components/SystemData/Table'
-import { useSelector } from 'react-redux';
-import FormTow from './components/DefinitionOfLog/FormTow';
-import FormThree from './components/DefineAndConfirmTheAgent/FormThree';
+import React from "react";
+import { styled } from "@mui/material/styles";
+import FusePageSimple from "@fuse/core/FusePageSimple";
+import FormHome from "@fuse/core/FormHome";
 
+const Root = styled(FusePageSimple)(({ theme }) => ({
+  "& .FusePageSimple-header": {
+    backgroundColor: theme.palette.background.paper,
+    borderBottomWidth: 1,
+    borderStyle: "solid",
+    borderColor: theme.palette.divider,
+  },
+  "& .FusePageSimple-toolbar": {},
+  "& .FusePageSimple-content": {},
+  "& .FusePageSimple-sidebarHeader": {},
+  "& .FusePageSimple-sidebarContent": {},
+}));
 const Home = () => {
-  const changeForm = useSelector(state => state.changeForm);
-  console.log("changeForm",changeForm)
   return (
-    <div className='rtl:pr-4' dir='rtl'>
-      {changeForm === 'تعریف سامانه' &&  <FormOne/> } 
-      {changeForm === 'تعریف لاگ' && <FormTow/>}
-      {changeForm === 'تعریف / تایید عامل' && <FormThree/>}
-    </div>
-  )
-}
+    <Root
+      className=""
+      content={
+        <FormHome/>
+      }
+    />
+  );
+};
 
-export default Home
+export default Home;
