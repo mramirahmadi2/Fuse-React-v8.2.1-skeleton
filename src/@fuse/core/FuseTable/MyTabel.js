@@ -90,7 +90,7 @@ const MyTable = ({ newRow, newCol, Key }) => {
               {newCol.map((item, index) => (
                 <TableCell key={index}>
                   <div className="flex flex-col justify-center items-center">
-                    <Typography variant="h6" sx={{ textAlign: "center" }}>
+                    <Typography variant="h6"  sx={{ textAlign: "center" }}>
                       {item.title}
                     </Typography>
                     <label className="border-2 flex flex-row-reverse rounded-xl py-8 justify-start">
@@ -148,14 +148,15 @@ const MyTable = ({ newRow, newCol, Key }) => {
           </TableBody>
         </Table>
       </TableContainer>
-      {/* Pagination */}
-      {pageCount > 1 && (
-        <FusePagination
+      {/* Pagination */} 
+      {/* در شرایطی که فقط یک صفحه داریم نخواهیم پگینیشن نمایش داده شود این قسمت را از کامن در بیاورید */}
+      {/* {pageCount > 1 && ( */}
+       {displayedRows.length >= 1 && <FusePagination
           pageCount={pageCount}
           currentPage={currentPage}
           handlePageChange={handlePageChange}
-        />
-      )}
+        />}
+      {/* )} */}
     </div>
   );
 };

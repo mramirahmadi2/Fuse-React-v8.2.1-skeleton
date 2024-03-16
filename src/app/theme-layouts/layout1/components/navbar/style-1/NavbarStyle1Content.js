@@ -79,8 +79,9 @@ function NavbarStyle1Content(props) {
       )}
     >
       <div className="flex flex-row items-center shrink-0 h-48 md:h-72 px-20">
-        <div className="text-center w-full">
-          <h1>نام شرکت</h1>
+        <div className="w-full flex flex-row items-center space-x-4 justify-center">
+          <div className="bg-[#D9D9D9] w-14 h-14 rounded-full" />
+          <h1 className="text-center pr-4">نام شرکت</h1>
         </div>
       </div>
 

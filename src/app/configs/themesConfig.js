@@ -45,6 +45,12 @@ const themesConfig = {
         dark: '#b71c1c',
       },
     },
+    typography: {
+      fontFamily: [
+        'Vazirmatn',
+        'sans-serif'
+      ].join(','),
+    },
     status: {
       danger: 'orange',
     },

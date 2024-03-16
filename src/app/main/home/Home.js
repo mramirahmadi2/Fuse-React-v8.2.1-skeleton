@@ -1,7 +1,7 @@
 import React from "react";
 import { styled } from "@mui/material/styles";
 import FusePageSimple from "@fuse/core/FusePageSimple";
-import FormHome from "@fuse/core/FormHome";
+import FormHome from "./FormHome";
 
 const Root = styled(FusePageSimple)(({ theme }) => ({
   "& .FusePageSimple-header": {

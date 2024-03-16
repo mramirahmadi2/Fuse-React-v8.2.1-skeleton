@@ -1,10 +1,10 @@
 
 /*@tailwind base;*/
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap'); */
 /**
  * Custom base styles
  */
-
+ @import "@fontsource-variable/vazirmatn";
 * {
     /* Text rendering */
     text-rendering: optimizeLegibility;
@@ -21,7 +21,7 @@
 
 html {
     font-size: 62.5%;
-    font-family: "Vazirmatn", sans-serif;
+    /* font-family: "Vazirmatn", sans-serif; */
     background-color: #121212;
 }
 
@@ -29,7 +29,7 @@ body {
     font-size: 14px;
     line-height: 1.4;
     overflow-x: hidden;
-    font-feature-settings: "salt";
+    font-family: "Vazirmatn Variable";
 }
 
 html, body {
